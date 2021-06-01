@@ -16,7 +16,7 @@
   --rectangle-height: calc(var(--button-width) * .1);
   --rectangle-radius: calc(var(--button-width) * .04);
   --translate: calc(var(--button-width) * .17);
-  --transition: 0.45s;
+  --transition: 0.30s;
 }
 
 ::selection {
@@ -343,7 +343,7 @@ transition: transform 0.1s ease-in;
   margin-top: 1.2rem;
 }
 #mongo {
-  height: 80%;
+  width: 60%;
   margin-top: 0.7rem;
   margin-bottom: 0.2rem;
 }
@@ -420,8 +420,7 @@ hr.solid {
   }
   
   .image {
-    width: 90%;
-    margin: auto;
+    display: none;
   }
 
   #Iphone {
@@ -430,6 +429,21 @@ hr.solid {
   
   .showcase .grid {
     flex-direction: column-reverse;
+  }
+
+  .cli .grid > *:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  }
+
+  .showcase {
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .narrow {
+    display: block
   }
 }
 
