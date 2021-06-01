@@ -386,7 +386,7 @@ hr.solid {
   .nav-ul.show {
     display: flex !important;
     padding-bottom: 4rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .navbar nav {
