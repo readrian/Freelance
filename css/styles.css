@@ -262,6 +262,10 @@ p {
   margin-top: 3rem;
 }
 
+.stats i {
+  color: var(--primary-color)
+}
+
 /* Cli */
 
 .cli .grid {
