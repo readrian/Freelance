@@ -215,11 +215,10 @@ p {
 
 #Iphone {
   margin-top: 30px;
-  width: 55rem;
+  width: 100%;
 }
 
 .image {
-  display: flex;
   align-items: center;
   justify-content:flex-end;
 }
@@ -276,8 +275,8 @@ p {
 }
 
 #Stripes {
-  width: 50rem;
-  margin-left: 5rem;
+  width: 90%;
+  margin: auto;
 }
 
 #cli1 {
@@ -290,6 +289,10 @@ p {
 /* Cloud */
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
+}
+
+#cloud img {
+  width: 100% !important;
 }
 
 /* Technologies */
@@ -359,9 +362,14 @@ hr.solid {
   border-top: 3px solid #fafafa;
 }
 
-/* .footer {
-    box-shadow: 0px 3px 10px rgba(0,0,0, 0.5);
-} */
+@media(max-width: 950px) {
+  .showcase h1 {
+    font-size: 50px;
+  }
+  .showcase p {
+    font-size: 14px;
+  }
+}
 
 /* Tablets and under */
 @media(max-width: 767px) {
@@ -397,7 +405,28 @@ hr.solid {
   #portfolio {
     margin-bottom: 10px;
   }
+
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
   
+  .image {
+    width: 90%;
+    margin: auto;
+  }
+
+  #Iphone {
+    margin-top: 0;
+  }
+  
+  .showcase .grid {
+    flex-direction: column-reverse;
+  }
 }
 
 
