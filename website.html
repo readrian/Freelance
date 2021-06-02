@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/website.css">
+  <link rel="icon" type="image/png" href="media/Favicon.svg" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+           user-scalable=0'>
+  <title>Web Design</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container flex navC">
+      <a href="home.html" id="LogoLink">
+        <img id="Logo" src="media/LogoRed.svg" alt="">
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span class="rectangle rectangle--top rectangle--small"></span>
+        <span class="rectangle rectangle--middle"></span>
+        <span class="rectangle rectangle--bottom rectangle--small"></span>
+      </button>
+
+      <ul id="nav-ul" class="nav-ul">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="website.html">WEB DESIGN</a></li>
+        <li><a href="about.html">ÜBER UNS</a></li>
+        <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="kontakt.html" class="btn">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Orange Card -->
+  <section class="wCard">
+    <div class="container flex" id="flex0">
+      <div class="card" id="wCard1">
+        <h1>Wir füllen keine Templates aus!</h1>
+      </div>
+
+      <div class="flex" id="flex1">
+        <div class="card" id="wCard2">
+          <h1>Ihre Seite.</h1>
+        </div>
+
+        <div class="card" id="wCard3">
+          <h1>Von Grund auf!</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <hr class="solid">
+  <footer class="footer py-5">
+    <div class="container grid grid-3">
+      <div>
+        <a href="home.html" id="LogoLink">
+          <img src="media/LogoBlack.svg" alt="">
+        </a>
+        <p>Copyright &copy; 2021</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="services.html">DIENSTE</a></li>
+          <li><a href="about.html">ÜBER UNS</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://github.com/readrian" class="i fab fa-github fa-2x" target="_blank"></a>
+        <a href="#" class="i fab fa-twitter fa-2x" target="_blank"></a>
+        <a href="#" class="i fab fa-instagram fa-2x" target="_blank"></a>
+        <a href="#" class="i fab fa-facebook fa-2x" target="_blank"></a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
