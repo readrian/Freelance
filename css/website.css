@@ -31,10 +31,13 @@
 #wCard2 h1 {
   font-size: 5vw;
 }
+#wCard2 h1 span {
+  font-size: 9vw;
+}
 
 #wCard2 {
   padding-left: 2vw;
-  padding-top: 4vw;
+  padding-top: 1vw;
   background-color: var(--secondary-color);
   color: white;
   grid-area: dark;
@@ -55,7 +58,7 @@
 @media(max-width: 576px) {
   #grid0{
   height: 140vw;
-  grid-template-columns: 55% auto;
+  grid-template-columns: 52% auto;
   grid-template-rows: 60% auto;
   grid-template-areas: "orange orange"
                        "dark bluee";
@@ -67,17 +70,21 @@
   }
 
   #wCard1 h1 {
-    font-size: 12.2vw;
+    font-size: 14vw;
     padding: 3vw 0;
   }
   #wCard2 {
+    padding-top: 4vw;
     padding-left: 3vw;
   }
   #wCard2 h1 {
-    font-size: 14vw;
+    font-size: 10vw;
+  }
+  #wCard2 h1 span {
+    font-size: 21vw;
   }
   #wCard3 {
-    padding-top: 3vw;
+    padding-top: 6vw;
   }
   #wCard3 h1 {
     font-size: 10vw;
