@@ -1,96 +1,89 @@
-/* .container {
- max-width: 100%;
-} */
-
-.wCard {
-  height: auto;
+.containing {
+  padding: 0 40px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-.wCard #wCard1 h1 {
+.wCard {
+  margin-top: 20px;
+}
+
+#grid0 {
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: 50% auto;
+  grid-template-areas: "orange dark"
+                       "orange bluee";
+}
+
+#wCard1 h1 {
   font-size: 8vw;
 }
 
-.wCard #wCard1 {
-  max-width: 44vw;
-  padding-left: 2vw;
-  margin-top: 2vw;
+#wCard1 {
+  padding-left: 4vw;
+  padding-top: 1vw;
   background-color: var(--primary-color);
   color: white;
-  align-self: stretch;
+  grid-area: orange;
 }
 
-.wCard #wCard2 h1 {
-  font-size: 10vw;
+#wCard2 h1 {
+  font-size: 5vw;
 }
 
-.wCard #wCard2 {
-  width: 30vw;
-  padding-left: 1vw;
-  margin-top: 2vw;
+#wCard2 {
+  padding-left: 2vw;
+  padding-top: 4vw;
   background-color: var(--secondary-color);
   color: white;
+  grid-area: dark;
 }
 
-.wCard #wCard3 h1 {
-  font-size: 4.6vw;
+#wCard3 h1 {
+  font-size: 4.1vw;
+  text-align: center;
 }
 
-.wCard #wCard3 {
-  width: 30vw;
-  padding-left: 2vw;
-  margin-top: 1vw;
+#wCard3 {
   background-color: var(--third-color);
   color: var(--dark-color);
-  align-self: flex-start;
+  padding: 1vw;
+  padding-top: 2vw;
 }
 
-#flex0 {
-  justify-content: center;
-}
-
-#flex1 {
-  flex-direction: column;
-}
-
-/* Mobile */
 @media(max-width: 576px) {
-  .wCard #flex0 {
-    flex-direction: column;
-  }
-  .wCard #wCard1 {
-    max-width: 100vw;
-    margin: 0;
-    margin-top: 10px;
-  }
-  .wCard #wCard1 h1 {
-    font-size: 17vw;
+  #grid0{
+  height: 140vw;
+  grid-template-columns: 55% auto;
+  grid-template-rows: 60% auto;
+  grid-template-areas: "orange orange"
+                       "dark bluee";
   }
 
-  .wCard #flex1 {
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: stretch;
+  #wCard1 {
+    background-color: var(--primary-color);
+    padding-left: 25px;
   }
-  .wCard #wCard2 {
-    width: 100%;
-    margin: 0;
-    margin-top: 12px;
-    align-self: flex-start;
+
+  #wCard1 h1 {
+    font-size: 12.2vw;
+    padding: 3vw 0;
   }
-  .wCard #wCard2 h1 {
+  #wCard2 {
+    padding-left: 3vw;
+  }
+  #wCard2 h1 {
     font-size: 14vw;
-    text-align: center;
   }
-  .wCard #wCard3 {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    margin-left: 10px;
-    margin-top: 12px;
-    padding-left: 15px;
+  #wCard3 {
+    padding-top: 3vw;
   }
-  .wCard #wCard3 h1 {
-    font-size: 13vw;
-    text-align: center;
+  #wCard3 h1 {
+    font-size: 10vw;
+  }
+
+  .containing {
+    padding: 0 5px;
   }
 }
