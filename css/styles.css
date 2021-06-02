@@ -201,12 +201,6 @@ p {
   margin: 20px 0;
 }
 
-.showcase .grid {
-  overflow: visible;
-  grid-template-columns: 40% 60%;
-  gap: 30px;
-}
-
 .showcase-form {
   position: relative;
   height: 100%;
@@ -418,16 +412,12 @@ hr.solid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  
-  .image {
-    display: none;
-  }
 
   #Iphone {
     margin-top: 0;
   }
-  
-  .showcase .grid {
+
+  .showcase .flex {
     flex-direction: column-reverse;
   }
 
