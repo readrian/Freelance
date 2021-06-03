@@ -283,6 +283,9 @@ p {
 #cli2 {
   align-self: flex-start;
 }
+.cli h2 {
+  margin-top: 0;
+}
 
 /* Cloud */
 .cloud .grid {
