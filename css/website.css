@@ -1,5 +1,5 @@
 .containing {
-  padding: 0 0px;
+  padding: 0 10px;
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -67,22 +67,48 @@
 
 .mCard {
   display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-rows: 50% auto;
+  grid-template-columns: auto 50%;
+  grid-template-rows: 50% 50%;
   grid-template-areas: "sos image"
                        "mobile image";
+  margin-bottom: 20px;
 }
 
 #mCard1 {
   grid-area: sos;
+  margin: 10px;
   margin-top: 0;
+  padding: 15px;
+}
+#mCard1 h1 {
+  font-size: 5vw;
+  color: var(--primary-color);
+  margin: 0;
+}
+#mCard1 h2 {
+  font-size: 2.8vw;
+  margin: 0;
 }
 #mCard2 {
   grid-area: mobile;
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 15px;
+}
+#mCard2 h1 {
+  font-size: 3vw;
+  margin: 0;
+  color: var(--primary-color);
+}
+#mCard2 h2 {
+  font-size: 2.3vw;
+  margin-bottom: 0;
 }
 #mCard3 {
   grid-area: image;
+  border-radius: 10px;
   width: 100%;
+  box-shadow: 0px 3px 10px rgba(0,0,0, 0.2);
 }
 
 
@@ -139,4 +165,44 @@
     margin-left: 10px;
   }
 
+  /* Mobile */
+
+  .mCard {
+  display: grid;
+  grid-template-columns: auto 50%;
+  grid-template-rows: auto 50%;
+  grid-template-areas: "image image"
+                       "mobile sos";
+  margin-bottom: 20px;
+}
+  #mCard1 {
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+#mCard1 h1 {
+  font-size: 14vw;
+  color: var(--primary-color);
+  margin: 0;
+}
+#mCard1 h2 {
+  font-size: 5vw;
+  margin: 0;
+}
+#mCard2 {
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+#mCard2 h1 {
+  font-size: 7vw;
+  margin: 0;
+}
+#mCard2 h2 {
+  font-size: 5vw;
+  margin-bottom: 0;
+}
+#mCard3 {
+
+}
 }
