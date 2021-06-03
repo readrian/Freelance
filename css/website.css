@@ -63,6 +63,30 @@
   font-size: 1.3rem;
 }
 
+/* Mobile */
+
+.mCard {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 50% auto;
+  grid-template-areas: "sos image"
+                       "mobile image";
+}
+
+#mCard1 {
+  grid-area: sos;
+  margin-top: 0;
+}
+#mCard2 {
+  grid-area: mobile;
+}
+#mCard3 {
+  grid-area: image;
+  width: 100%;
+}
+
+
+
 @media(max-width: 767px) {
   .personal .flex {
     flex-direction: column-reverse;
