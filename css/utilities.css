@@ -60,6 +60,11 @@
   color: #333;
 }
 
+.bg-black, .btn-black {
+  background-color: #333;
+  color: #fff;
+}
+
 .bg-primary a,
 .btn-primary a,
 .bg-secondary a,
