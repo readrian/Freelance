@@ -63,6 +63,33 @@
   font-size: 1.3rem;
 }
 
+/* Security */
+.security {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.security i {
+  font-size: 15rem;
+}
+
+.security h1 {
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.security h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.security p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+
 /* Mobile */
 
 .mCard {
@@ -86,7 +113,7 @@
   margin: 0;
 }
 #mCard1 h2 {
-  font-size: 2.8vw;
+  font-size: 2.3vw;
   margin: 0;
 }
 #mCard2 {
@@ -96,7 +123,7 @@
   padding: 15px;
 }
 #mCard2 h1 {
-  font-size: 3vw;
+  font-size: 2.3vw;
   margin: 0;
   color: var(--primary-color);
 }
@@ -124,6 +151,18 @@
 
   .personal p {
   font-size: 5vw;
+  }
+
+  .security h1 {
+    font-size: 17vw;
+  }
+
+  .security h2{
+    font-size: 8vw;
+  }
+
+  .security i {
+    font-size: 45vw;
   }
 }
 
@@ -201,8 +240,5 @@
 #mCard2 h2 {
   font-size: 5vw;
   margin-bottom: 0;
-}
-#mCard3 {
-
 }
 }
