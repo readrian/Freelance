@@ -3,7 +3,30 @@
   max-width: 1500px;
   margin: 0 auto;
 }
+/* Frage */
+.frage {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.frage h1 {
+  font-size: 6rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.frage p {
+  font-size: 2rem;
+  text-align: center;
+  max-width: 80%;
+}
+
+.frage .flex {
+  justify-content: center;
+}
+
+/* Templates */
 .wCard {
   margin-top: 10px;
 }
@@ -143,6 +166,19 @@
 
 
 @media(max-width: 767px) {
+  .frage {
+    padding: 0;
+  }
+
+  .frage h1 {
+    font-size: 10vw;
+  }
+
+  .frage p {
+  font-size: 4vw;
+  max-width: 90%;
+  }
+
   .personal .flex {
     flex-direction: column-reverse;
   }
@@ -166,9 +202,17 @@
   .security i {
     font-size: 45vw;
   }
+
+ 
 }
 
 @media(max-width: 576px) {
+  .frage h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  }
+
   #grid0{
   height: 140vw;
   grid-template-columns: 52% auto;
